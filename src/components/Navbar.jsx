@@ -1,23 +1,60 @@
-
-import { Outlet } from "react-router-dom";
+import { Outlet,Link } from "react-router-dom";
 
 export default function Navbar({ products }) {
   return (
     <div>
-      <nav>
-        <div className="logo">
-          <h1>ReactStore</h1>
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <div className="container-fluid">
+          <a className="navbar-brand" href="#">
+            Navbar
+          </a>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <li className="nav-item">
+                <Link className="nav-link active" aria-current="page" href="#">
+                  All Products
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link active" aria-current="page" href="#">
+                  Categories
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link active" aria-current="page" href="#">
+                  Users
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link active" aria-current="page" href="#">
+                  Todos
+                </Link>
+              </li>  
+            </ul>
+            <form className="d-flex">
+              <input
+                className="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button className="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
         </div>
-        <div className="links">
-          <a href="/">All products</a>
-          <a href="/comments">Comments</a>
-          <a href="/categories/">Categories</a>
-          <a href="/usersearch">Search for Users</a>
-          <a href="/todos">Get all todos</a>
-        </div>
-       
-          
-  
       </nav>
       <Outlet />
     </div>
