@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav{
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 30px;
+  align-items: center;
+  max-width: 1450px;
+  margin: 0 auto;
+  padding: 15px 25px;
+}
+.products-container {
+  max-width: 1450px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+}
+.logo h1{
+  font-family: 'jost',sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+}
+.links a{
+  padding-inline: 20px;
+  text-decoration: none;
+  font-family: 'jost',sans-serif;
+  font-size: 17px;
+  color: black;
+}
+.search input{
+  height: vh;
+}
+
+.single-product-grid{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+}
+
+.first-text h1{
+  font-family: 'jost',sans-serif;
+  font-size: 36px;
+  text-transform: capitalize;
+  font-weight: 500;
+  padding-bottom: 25px;
+}
+.first-text h4{
+  font-family: 'jost',sans-serif;
+  font-size: 19px;
+  /* letter-spacing: 1px; */
+  /* color: orangered; */
+  padding-bottom: 13px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.button button a {
+  text-decoration: none;
+  color: white;
+}
+
+.first-text p{
+  font-family: 'jost',sans-serif;
+  font-size: 17px;
+  text-transform: capitalize;
+  font-weight: 0;
+  padding-bottom: 25px;
+}
+.first-text p span{
+  color: orangered;
+}
+.second-text{
+  max-width: 500px;
+  border-top: 1px solid;
+ 
+}
+.second-text p{
+  line-height: 2;
+  font-size: 17px;
+  font-family: 'jost',sans-serif;
+  font-weight: 400;
+  color: rgb(38, 37, 37);
+  padding-top: 15px;
+}
+.quantity-flex{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 30px;
+}
+.quantity-flex input{
+  width: 76px;
+  border: 1px solid #eeeeee;
+  border-radius: 3px;
+  padding: 5px;
+  margin-top: 15px;
+}
+.cart{
+  margin-top: 10px;
+}
+.cart-add{
+  background: rgb(196, 57, 6);
+  font-family: 'poppins',sans-serif;
+  text-transform: capitalize;
+  border-bottom: 2px solid black;
+  padding-bottom: 15px;
+  letter-spacing: 1px;
+  font-size: 14px;
+  transition: all 0.53;
+  width: 150px;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 20px 0 auto;
+  cursor: pointer;
+  color: #fff;
+  margin: 5px;
+}
+.btn-home{
+  background: black;
+  font-family: 'poppins',sans-serif;
+  text-transform: capitalize;
+  border-bottom: 2px solid black;
+  padding-bottom: 15px;
+  letter-spacing: 1px;
+  font-size: 14px;
+  transition: all 0.53;
+  width: 150px;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 20px 0 auto;
+  cursor: pointer;
+  color: #fff;
+  margin: 20px;
+}
+
+
+
+
+.productdetails-grid{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.single-product-img {
+  width: 400px;
+  height: 400px;
+}
+.image-container{
+  width: 250px;
+  height: 250px;
+  border-radius: 0.8rem;
+  position: relative;
+}
+.single-product-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.upper-part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.image-container img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: -1;
+  object-fit: cover;
+}
+.product-box {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 0.8rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.price-discount-row h5 {
+  font-family: "jost", sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+ .percentage {
+  font-family: "jost", sans-serif;
+  font-size: 11px;
+  position: absolute;
+  top: 0;
+  right: -20px;
+  z-index: 99;
+  color: #f78d1e;
+  background-color: #fef3e9;
+  padding: 4px;
+  margin-left: 5px;
+}
+.price-discount-row {
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 40px;
+}
+.props {
+  margin-top: 20px;
+  font-family: "jost", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+.price-discount-row p {
+  font-family: "jost", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+
+  letter-spacing: 1px;
+}
+.button button {
+  font-family: "jost", sans-serif;
+  font-weight: 400;
+  padding: 10px 20px;
+  border-radius: 0.8rem;
+  border: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.comments h3 {
+  font-family: 'jost',sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+}
+.comments h4 {
+  font-family: 'jost',sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+.amount{
+  font-family: 'jost',sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+.comments{
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 5px 10px;
+  border-radius: 0.8rem;
+}
+.categoryholder{
+  text-transform: capitalize;
+}
+.container{
+  display: grid;
+  margin: 20px auto;
+  grid-template-columns: repeat(auto-fit, minmax(250px , 1fr));
+}
+.comments-container{
+  max-width: 1350px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.search-comp{
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.comments h2 {
+  font-size: 17px;
+  line-height: 1.7;
+}
+.error{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
