@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Navbar from "./Navbar";
+
 
 export default function UserSearch() {
   const [error, setError] = useState("");
@@ -29,7 +29,6 @@ export default function UserSearch() {
   };
   return (
     <div className="search-comp">
-      <Navbar />
       <div class="input-group mb-3">
         <input
           type="text"

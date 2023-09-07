@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Navbar from "./Navbar";
+
 
 const url = `https://dummyjson.com/todos`;
 
@@ -23,7 +23,6 @@ export default function Todos() {
   }, []);
   return (
     <div>
-     <Navbar/>
       <div  className="comments-container">
        {todos.map((com , index) => {
          return (

@@ -6,7 +6,7 @@ export default function Navbar({ products }) {
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
-            Navbar
+            HayzeddStore
           </a>
           <button
             className="navbar-toggler"
@@ -22,22 +22,22 @@ export default function Navbar({ products }) {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" href="#">
+                <Link className="nav-link active" aria-current="page" to={'/'}>
                   All Products
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" href="#">
+                <Link className="nav-link active" aria-current="page" to={'/categories'}>
                   Categories
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" href="#">
+                <Link className="nav-link active" aria-current="page" to={'/userssearch'}>
                   Users
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" href="#">
+                <Link className="nav-link active" aria-current="page" to={'/todos'}>
                   Todos
                 </Link>
               </li>  

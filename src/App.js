@@ -34,13 +34,14 @@ function App() {
           loader : LoadCategory
          
         },
-        
+      
         {
-          
+          path: "userssearch",
+          element:<UserSearch/>
         },
         {
-          path: "userssearcg",
-          element:<UserSearch/>
+          path: "todos",
+          element:<Todos/>
         }
       ]
     },
