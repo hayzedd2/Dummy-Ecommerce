@@ -47,17 +47,15 @@ nav{
 
 .first-text h1{
   font-family: 'jost',sans-serif;
-  font-size: 36px;
+  font-size: 19px;
   text-transform: capitalize;
   font-weight: 500;
-  padding-bottom: 25px;
+  padding-bottom: 10px;
 }
 .first-text h4{
   font-family: 'jost',sans-serif;
-  font-size: 19px;
-  /* letter-spacing: 1px; */
-  /* color: orangered; */
-  padding-bottom: 13px;
+  font-size: 18px;
+  padding-bottom: 10px;
   text-transform: capitalize;
   font-weight: 500;
 }
@@ -87,20 +85,20 @@ nav{
   font-family: 'jost',sans-serif;
   font-weight: 400;
   color: rgb(38, 37, 37);
-  padding-top: 15px;
+
 }
 .quantity-flex{
   display: flex;
   align-items: center;
   gap: 20px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 .quantity-flex input{
   width: 76px;
   border: 1px solid #eeeeee;
   border-radius: 3px;
   padding: 5px;
-  margin-top: 15px;
+  /* margin-top: 15px; */
 }
 .cart{
   margin-top: 10px;

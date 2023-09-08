@@ -3,7 +3,7 @@ import ProductDetail from "../views/ProductDetail"
 
 
 const SingleProduct = () => {
-    const { id } = useParams()
+
     const singleProduct = useLoaderData()
     const newItem = []
     newItem.push(singleProduct)

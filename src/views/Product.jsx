@@ -10,6 +10,7 @@ function Product({ products }) {
             <div key={product.id} className="product-box">
               <div className="upper-part">
                 <div className="image-container">
+              
                   <LazyLoadImage
                     alt="LOADING"
                     height={225}
